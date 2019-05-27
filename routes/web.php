@@ -22,3 +22,6 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/exemplo', 'ExemploController@index')->name('exemplo');
 Route::resource('/carro','CarrosController', ['except' => ['destroy']]);
 Route::get('/modelo/{modelo}/delete', 'CarrosController@destroy')->name('carro.destroy');
+
+Route::resource('/usuarios','UsuariosController', ['except' => ['destroy']]);
+Route::get('/usuarios/{usuario}/delete', 'UsuariosController@destroy')->name('usuario.destroy');
