@@ -18,7 +18,7 @@
   </thead>
   <tbody>
   @foreach($usuarios as $usuario)   
-    <tr>
+    <tr>    
       <th scope="row">{{ $usuario->id }}</th>
       <td>{{ $usuario->nome }}</td>
       <td>{{ $usuario->endereco }}</td>
